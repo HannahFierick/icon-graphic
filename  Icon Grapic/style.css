@@ -1,0 +1,83 @@
+
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+/** SET BORDER BOX EVERYWHERE */
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    color: black;
+
+    background-color:rgb(192,192,192);
+        color: gray;
+}
+}
+.mainphoto {
+  display: block;
+  size: 1000px;
+  width: 100%;
+  border: 0px;
+}
+
+img {
+ display: block;
+ width: 100%;
+ border: 5px solid #555;
+ border-color: black;
+}
+}
+.container {
+  display: block;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 0%;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+  .flex {
+    display:flex;
+    justify-content: space-between;
+  }
+.flex > div {
+  flex-basis:45%
+  padding:10px;
+}
+}
+img {
+ display: block;
+ width: 50%;
+ border-color: black;
+}
+}
+.mainphoto {
+  display: block;
+  border-radius: 0px;
+
+}
+]
+.container {
+  display: block;
+  max-width: 1500px;
+  margin: 0 auto;
+  height: 0%;
+}
+.credit{
+  color: black;
+  font-size: 10px
+}
